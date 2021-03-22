@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    // tạo lớp circle
+
+    let Circle = function (radius){
+        this.radius = radius;
+
+        // xây dựng phương thức trả về của bán kính
+
+        this.getRadius = function (){
+            return radius;
+        }
+
+        // xây dựng phương thức tính diện tích hình tròn
+
+        this.getArea = function (){
+            return Math.PI * radius * radius;
+        }
+
+    };
+
+    // Sử dụng lớp vừa tạo, tạo đối tượng hình tròn
+
+    let circle = new Circle(2);
+
+    //truy nhập vào phương thức của lớp hình tròn
+
+    let radius = circle.getRadius();
+    let area = circle.getArea();
+
+    //hiển thị bán kính và diện tích
+
+    alert("bán kính là: "+radius+" diện tích là: "+area);
+
+
+</script>
